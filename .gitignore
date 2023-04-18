@@ -60,6 +60,7 @@
 /drush
 /drupal.phar
 /drupal
+*.backup
 *.sql.gz
 *.sql
 .idea
