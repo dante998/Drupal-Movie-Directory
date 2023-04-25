@@ -1,19 +1,20 @@
-uuid: 9bf07470-69dc-4bcb-881d-fd1d9df33460
+uuid: 628e574f-e3fd-44a4-aa29-6c59c52a8210
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.computer.body
-    - field.field.node.computer.field_description
-    - field.field.node.computer.field_media
-    - node.type.computer
+    - field.field.node.instruments.body
+    - field.field.node.instruments.field_dr
+    - field.field.node.instruments.field_guitar
+    - field.field.node.instruments.field_microphone
+    - node.type.instruments
   module:
     - text
     - user
-id: node.computer.teaser
+id: node.instruments.teaser
 targetEntityType: node
-bundle: computer
+bundle: instruments
 mode: teaser
 content:
   body:
@@ -30,5 +31,6 @@ content:
     weight: 100
     region: content
 hidden:
-  field_description: true
-  field_media: true
+  field_dr: true
+  field_guitar: true
+  field_microphone: true

@@ -1,24 +1,19 @@
-uuid: 45f981a1-cb86-4d1c-a635-1c1bca79767b
+uuid: 683a9a16-bea6-450c-b695-c7a1c2557245
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.waterfall.body
-    - field.field.node.waterfall.field_hike_duration
-    - field.field.node.waterfall.field_image
-    - field.field.node.waterfall.field_official_website
-    - field.field.node.waterfall.field_walking_and_driving_instru
-    - field.field.node.waterfall.field_waterfall_height
-    - image.style.thumbnail
-    - node.type.waterfall
+    - field.field.node.instruments.body
+    - field.field.node.instruments.field_dr
+    - field.field.node.instruments.field_guitar
+    - field.field.node.instruments.field_microphone
+    - node.type.instruments
   module:
-    - image
-    - link
     - path
     - text
-id: node.waterfall.default
+id: node.instruments.default
 targetEntityType: node
-bundle: waterfall
+bundle: instruments
 mode: default
 content:
   body:
@@ -37,42 +32,28 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_hike_duration:
-    type: number
-    weight: 124
-    region: content
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-  field_image:
-    type: image_image
+  field_dr:
+    type: text_textfield
     weight: 123
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-  field_official_website:
-    type: link_default
+  field_guitar:
+    type: text_textfield
     weight: 122
     region: content
     settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-  field_walking_and_driving_instru:
-    type: text_textarea
-    weight: 125
-    region: content
-    settings:
-      rows: 5
+      size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_waterfall_height:
-    type: number
-    weight: 126
+  field_microphone:
+    type: text_textfield
+    weight: 124
     region: content
     settings:
+      size: 60
       placeholder: ''
     third_party_settings: {  }
   path:

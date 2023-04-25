@@ -1,14 +1,14 @@
-uuid: a3d4f8f0-2794-4d8b-8bbf-741e72c48f36
+uuid: b626196d-4fac-498b-afff-81b85af6c59f
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.waterfall
-id: node.waterfall.title
+    - node.type.instruments
+id: node.instruments.title
 field_name: title
 entity_type: node
-bundle: waterfall
-label: 'Waterfall name'
+bundle: instruments
+label: Instruments
 description: ''
 required: true
 translatable: true
