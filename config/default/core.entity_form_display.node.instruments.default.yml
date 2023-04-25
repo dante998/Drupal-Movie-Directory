@@ -9,6 +9,11 @@ dependencies:
     - field.field.node.instruments.field_microphone
     - node.type.instruments
   module:
+<<<<<<< HEAD:config/default/core.entity_form_display.node.instruments.default.yml
+=======
+    - content_moderation
+    - media_library
+>>>>>>> paragraph:config/default/core.entity_form_display.node.pic.default.yml
     - path
     - text
 id: node.instruments.default
@@ -55,6 +60,19 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    region: content
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path

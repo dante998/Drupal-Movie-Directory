@@ -32,3 +32,5 @@ content:
 hidden:
   field_price: true
   field_thumbnail: true
+  langcode: true
+  search_api_excerpt: true

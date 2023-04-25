@@ -15,14 +15,20 @@ class MovieListing extends ControllerBase {
     return [
       '#theme' => 'movie-listing',
       '#content' => $content,
+      '#attached' => [
+        'library' => [
+          'movie_directory/movie-directory-styling',
+        ]
+      ]
     ];
   }
 
   public function listMovies() {
-    /** @var \MovieAPIConnector $movie_api_connector_service */
+    /** @var \Drupal\movie_directory\MovieAPIConnector $movie_api_connector_service */
     $movie_api_connector_service = \Drupal::service('movie_directory.api_connector');
     $movie_list = $movie_api_connector_service->discoverMovies();
-    if (!empty($movie_list->results)){
+
+    if (!empty($movie_list->results)) {
       return $movie_list->results;
     }
     return [];

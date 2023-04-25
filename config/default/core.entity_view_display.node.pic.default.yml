@@ -1,0 +1,50 @@
+uuid: fb86c714-dca5-45dd-b1e8-0c6e606c65b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.pic.body
+    - field.field.node.pic.field_image_2
+    - field.field.node.pic.field_number
+    - node.type.pic
+  module:
+    - text
+    - user
+id: node.pic.default
+targetEntityType: node
+bundle: pic
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_image_2:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_number:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

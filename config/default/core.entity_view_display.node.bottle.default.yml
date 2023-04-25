@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment.default
     - field.field.node.bottle.body
     - field.field.node.bottle.field_bottle
     - field.field.node.bottle.field_comments
@@ -45,4 +46,6 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

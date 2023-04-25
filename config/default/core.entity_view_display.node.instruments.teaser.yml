@@ -31,6 +31,13 @@ content:
     weight: 100
     region: content
 hidden:
+<<<<<<< HEAD:config/default/core.entity_view_display.node.instruments.teaser.yml
   field_dr: true
   field_guitar: true
   field_microphone: true
+=======
+  field_image_2: true
+  field_number: true
+  langcode: true
+  search_api_excerpt: true
+>>>>>>> paragraph:config/default/core.entity_view_display.node.pic.teaser.yml

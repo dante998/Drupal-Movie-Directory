@@ -1,12 +1,14 @@
 <?php
 namespace Drupal\movie_directory;
+use Drupal\Core\Http\ClientFactory;
+
 class MovieAPIConnector {
 
-  private $client;
+  private \GuzzleHttp\Client $client;
 
-  private $query;
+  private array $query;
 
-  public function __construct(\Drupal\Core\Http\ClientFactory $client) {
+  public function __construct(ClientFactory $client) {
     $movie_api_config = \Drupal::state()->get(\Drupal\movie_directory\Form\MovieAPI::MOVIE_API_CONFIG_PAGE);
     $api_url = ($movie_api_config['api_base_url']) ?: 'https://api.themoviedb.org';
     $api_key = ($movie_api_config['api_base_url']) ?: '';
@@ -30,7 +32,7 @@ class MovieAPIConnector {
 
     }
     catch (\GuzzleHttp\Exception\RequestException $e){
-     watchdog_exception('movie_directory', $e, $e->getMessege());
+     watchdog_exception('movie_directory', $e, $e->getMessage());
     }
     return $data;
   }
