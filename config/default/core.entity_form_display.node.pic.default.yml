@@ -1,24 +1,20 @@
-uuid: 683a9a16-bea6-450c-b695-c7a1c2557245
+uuid: c374bd96-7cb1-44a3-8f75-8645171f2173
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.instruments.body
-    - field.field.node.instruments.field_dr
-    - field.field.node.instruments.field_guitar
-    - field.field.node.instruments.field_microphone
-    - node.type.instruments
+    - field.field.node.pic.body
+    - field.field.node.pic.field_image_2
+    - field.field.node.pic.field_number
+    - node.type.pic
   module:
-<<<<<<< HEAD:config/default/core.entity_form_display.node.instruments.default.yml
-=======
     - content_moderation
     - media_library
->>>>>>> paragraph:config/default/core.entity_form_display.node.pic.default.yml
     - path
     - text
-id: node.instruments.default
+id: node.pic.default
 targetEntityType: node
-bundle: instruments
+bundle: pic
 mode: default
 content:
   body:
@@ -37,28 +33,18 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_dr:
-    type: text_textfield
-    weight: 123
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_guitar:
-    type: text_textfield
+  field_image_2:
+    type: media_library_widget
     weight: 122
     region: content
     settings:
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
-  field_microphone:
-    type: text_textfield
-    weight: 124
+  field_number:
+    type: number
+    weight: 123
     region: content
     settings:
-      size: 60
       placeholder: ''
     third_party_settings: {  }
   langcode:

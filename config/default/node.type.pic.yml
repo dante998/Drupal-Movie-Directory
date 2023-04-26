@@ -1,4 +1,4 @@
-uuid: 5528949a-9799-436f-b230-9cf11734bbf4
+uuid: 4e393d68-1204-41a5-a246-0a194e720708
 langcode: en
 status: true
 dependencies:
@@ -9,9 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: Instruments
-type: instruments
-description: 'This is a set of instruments'
+name: Pic
+type: pic
+description: ''
 help: ''
 new_revision: true
 preview_mode: 1

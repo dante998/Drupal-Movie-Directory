@@ -1,0 +1,36 @@
+uuid: 407f6965-46d6-4489-8908-446338de79f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pic.body
+    - field.field.node.pic.field_image_2
+    - field.field.node.pic.field_number
+    - node.type.pic
+  module:
+    - text
+    - user
+id: node.pic.teaser
+targetEntityType: node
+bundle: pic
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_image_2: true
+  field_number: true
+  langcode: true
+  search_api_excerpt: true

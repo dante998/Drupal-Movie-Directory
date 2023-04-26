@@ -1,16 +1,15 @@
-uuid: 21cc7cc0-5dad-4b87-a4a4-35a24b55d1c4
+uuid: 8dbd4c9d-ef1e-466d-af73-bb2a58f08eba
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - text
-id: node.field_dr
-field_name: field_dr
+id: node.field_walking_and_driving_instru
+field_name: field_walking_and_driving_instru
 entity_type: node
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

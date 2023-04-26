@@ -1,17 +1,17 @@
-uuid: dccb1e67-0cc9-4fe5-808d-d84ce07fb8ce
+uuid: 0cca7375-0a05-4be5-9065-b335f5978349
 langcode: en
 status: true
 dependencies:
   module:
+    - media
     - node
-    - text
-id: node.field_guitar
-field_name: field_guitar
+id: node.field_media
+field_name: field_media
 entity_type: node
-type: text
+type: entity_reference
 settings:
-  max_length: 255
-module: text
+  target_type: media
+module: core
 locked: false
 cardinality: 1
 translatable: true

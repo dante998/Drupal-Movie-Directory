@@ -1,19 +1,18 @@
-uuid: ac8243e2-5a54-4bd7-9ceb-9c68e4925912
+uuid: 0271211d-3506-431f-b289-bbb206b39fd3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.instruments.body
-    - field.field.node.instruments.field_dr
-    - field.field.node.instruments.field_guitar
-    - field.field.node.instruments.field_microphone
-    - node.type.instruments
+    - field.field.node.computer.body
+    - field.field.node.computer.field_description
+    - field.field.node.computer.field_media
+    - node.type.computer
   module:
     - text
     - user
-id: node.instruments.default
+id: node.computer.default
 targetEntityType: node
-bundle: instruments
+bundle: computer
 mode: default
 content:
   body:
@@ -23,26 +22,21 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
-  field_dr:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 103
-    region: content
-  field_guitar:
+  field_description:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
     weight: 102
     region: content
-  field_microphone:
-    type: text_default
+  field_media:
+    type: entity_reference_entity_view
     label: above
-    settings: {  }
+    settings:
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    weight: 104
+    weight: 103
     region: content
   links:
     settings: {  }

@@ -1,0 +1,16 @@
+mymodule.my_module:
+  path: '/mymodulepath'
+  defaults:
+    _controller: '\Drupal\my_module\Controller\FirstController::content'
+    _title: 'Simplicity is the ultimate sophistication'
+  requirements:
+    _permission: 'access content'
+
+
+mymodule.content:
+  path: '/mycontentpath/{name_1}/{name_2}'
+  defaults:
+    _controller: '\Drupal\my_module\Controller\FirstController::variable'
+    _title: 'Dynamic Greeting'
+  requirements:
+    _permission: 'access content'

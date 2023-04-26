@@ -1,0 +1,12 @@
+uuid: 613371f0-5b93-4938-a1f2-e5112fec51c8
+langcode: en
+status: true
+dependencies:
+  module:
+    - content_translation
+id: manager
+label: Manager
+weight: 7
+is_admin: false
+permissions:
+  - 'update content translations'

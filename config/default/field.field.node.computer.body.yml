@@ -1,16 +1,16 @@
-uuid: 06bac906-eb49-4575-a0ec-6189c2bb4784
+uuid: 8d514c5f-8d02-44a5-ac6a-53292474b93b
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.instruments
+    - node.type.computer
   module:
     - text
-id: node.instruments.body
+id: node.computer.body
 field_name: body
 entity_type: node
-bundle: instruments
+bundle: computer
 label: Body
 description: ''
 required: false

@@ -1,17 +1,17 @@
-uuid: d37940b5-4d0a-4a2c-9f6d-24fd2d4fdd64
+uuid: 095c4dd2-d9ea-4039-a793-adb6dc64dd6b
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_guitar
-    - node.type.instruments
+    - field.storage.node.field_description
+    - node.type.computer
   module:
     - text
-id: node.instruments.field_guitar
-field_name: field_guitar
+id: node.computer.field_description
+field_name: field_description
 entity_type: node
-bundle: instruments
-label: Guitar
+bundle: computer
+label: Description
 description: ''
 required: false
 translatable: false
